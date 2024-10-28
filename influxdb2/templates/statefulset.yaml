@@ -5,7 +5,7 @@ metadata:
   labels:
     {{- include "influxdb.labels" . | nindent 4 }}
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       {{- include "influxdb.selectorLabels" . | nindent 6 }}
